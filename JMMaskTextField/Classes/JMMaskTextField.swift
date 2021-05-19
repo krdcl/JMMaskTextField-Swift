@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc
 open class JMMaskTextField: UITextField {
 
     // damn, maskView is just mask in Swift

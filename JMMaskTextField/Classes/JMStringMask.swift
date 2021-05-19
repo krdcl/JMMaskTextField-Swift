@@ -14,13 +14,12 @@ fileprivate struct Constants {
     static let alphanumericMaskCharacter: Character = "*"
 }
 
-public struct JMStringMask: Equatable {
+@objc
+public class JMStringMask: NSObject {
     
     var mask: String = ""
     
-    private init() { }
-    
-    public init(mask: String) {
+    convenience public init(mask: String) {
         self.init()
         
         self.mask = mask
